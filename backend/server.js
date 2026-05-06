@@ -12,10 +12,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: [
-    'https://taskforge-nine-iota.vercel.app',
-    'https://taskforge-hngkn98sm-prathamsingh8331s-projects.vercel.app'
-  ],
+  origin: true,
   credentials: true
 }));
 app.use(express.json());
